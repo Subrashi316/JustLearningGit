@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Press Start 2P', cursive;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(40, 100%, 50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+header{
+    width: 100%;
+}
+header button{
+    padding: 1rem 1rem;
+    margin: 1rem 1rem;
+}
+header h1{
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.number{
+    border: 3px solid white;
+    background-color: white;
+    margin: 6rem auto;
+    text-align: center;
+    padding: 1rem 1rem;
+    width: 10vw;
+}
+header hr{
+    color: white;
+    position: relative;
+    bottom: 127px;
+    height: 4px;
+    background-color: white;
+    border: none;
+    z-index: -1;
+}
+
+main{
+    display: flex;
+    justify-content: space-evenly;
+}
+.inpt{
+    display: flex;
+    flex-flow: column;
+    width: 25vw;
+    justify-content: center;
+    align-items: center;
+    
+}
+.inpt input{
+    width: 10rem;
+    height: 6rem;
+    border: none;
+}
+.inpt button{
+    width: 8rem;
+    height: 3rem;
+    margin: 1rem 0;
+}
+.scoreArea{
+    margin: 0 1rem;
+    width: 37vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.scoreArea #status{
+    margin-bottom: 3rem;
+}
+
+.scoreArea .currentScore{
+    margin: 1rem 0;
+    display: flex;
+}
+.highScore{
+    display: flex;
+}
+#textInput{
+    text-align: center;
+    font-size: 2rem;
+}
+
+#footer{
+    text-align: center;
+    margin: 5vh 3vw;
+    position: relative;
+    bottom: 3rem;
+}
+
+.modal{
+    position: absolute;
+    border: 2px solid;
+    width: 43vw;
+    background: white;
+    padding: 2rem;
+    z-index: 10;
+}
+
+.modal h2{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.closebtn{
+    padding: 0.1rem;
+    border: none;
+    background: none;
+    font-size: 1.5rem;
+    position: relative;
+    float: right;
+    cursor: pointer;
+
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 5;
+    position: absolute;
+}
+
+.hidden{
+    display: none;
+}
+@media only screen and (max-width : 730px) {
+    main{
+        flex-flow: column;
+        align-items: center;
+    }
+    .inpt{
+        margin: 2vh 0;
+    }
+    .scoreArea{
+        width: auto;
+    }
+}
